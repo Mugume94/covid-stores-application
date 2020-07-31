@@ -1,0 +1,51 @@
+extends layout
+block content
+    header.card-header
+        h4.card-title product Details.
+    form(method = "POST" action = '/product')
+        div.form-row
+            div.col.form-group
+                label Name of the Item:
+                input.form-control(name = "item_name")
+            div.col.form-group
+                label Make:
+                input.form-control(name = "make")
+            div.col.form-group
+                label Date of entry:
+                input.form-control(type='date' name='date' value='2020-07-22' min='2020-03-01' max='2020-12-31')
+        div.form-row
+            div.col.form-group
+                label Category of the Item:
+                input.form-control(name = "category")
+            div.col.form-group
+                label Serial Number:
+                input.form-control(name = "serial")
+            div.col.form-group
+                label Price:
+                input.form-control(name = "price")
+        div.form-row
+            div.col.form-group
+                label Initial Pay:
+                input.form-control(name = "pay")
+            div.col.form-group
+                label Pay Interval:
+                input.form-control(name = "pay_interval")
+            div.col.form-group
+                label Description:
+                input.form-control(name = "description")
+        div.form-row
+            div.col.form-group
+                label Number in stock:
+                input.form-control(name = "stock_number")
+            div.col.form-group
+                label Description:
+                input.form-control(name = "description")
+            div.col.form-group
+                label color:
+                select.form-control(name="color")
+                    option(value="blue") Blue
+                    option(value="Black") Black
+                    option(value="Grey") Grey
+        div.form-row
+            div.col.form-group
+            button.btn.btn-primary send 

@@ -1,0 +1,51 @@
+extends layout
+block content
+    header.card-header
+        h4.card-title Purchase details
+    form(method = "POST" action = '/admin')
+        div.form-row
+            div.col.form-group
+                label Name of the customer:
+                input.form-control(name = "name")
+            div.col.form-group  
+                label Location:
+                input.form-control(name = "location")
+            div.col.form-group 
+                label Phone Number:
+                input.form-control(name = "phone_number")
+            div.col.form-group 
+                label National ID:
+                input.form-control(name = "id_no")
+        div.form-row
+            div.col.form-group
+                label Date of pay:
+                input.form-control(type='date' name='date' value='2020-07-22' min='2020-03-01' max='2020-12-31')
+            div.col.form-group  
+                label Next date of payment:
+                input.form-control(type='date' name='next_date' value='2020-07-22' min='2020-03-01' max='2020-12-31')
+            div.col.form-group 
+                label Amount next payable:
+                input.form-control(name = "amount")
+        div.form-row
+            div.col.form-group 
+                label Email:
+                input.form-control(name = "email")
+            div.col.form-group 
+                label Item Name:
+                input.form-control(name = "item_name")
+            div.col.form-group 
+                label Item serial Number:
+                input.form-control(name = "serial_no")
+        div.form-row
+            div.col.form-group 
+                label Reference Number:
+                input.form-control(name = "reference_no")
+            div.col.form-group 
+                label Purchase Receipt:
+                input.form-control(name = "purchase")
+        div.form-row
+            div.col.form-group
+                button.btn.btn-primary SEND
+            
+
+
