@@ -14,6 +14,7 @@ const loginRoutes = require('./routes/loginroutes')
 const registrationRoutes = require('./routes/registrationroutes')
 const adminRoutes = require('./routes/adminroutes')
 const productRoutes = require('./routes/productroutes')
+const homeRoutes = require('./routes/homeroutes')
 const Register = require('./models/Registration');
 require('./models/Admin');
 require('dotenv').config();
@@ -58,6 +59,7 @@ app.use('/register', registrationRoutes);
 app.use('/admin', adminRoutes);
 app.use('/login', loginRoutes);
 app.use('/product', productRoutes);
+app.use('/home', homeRoutes); 
 
 
 

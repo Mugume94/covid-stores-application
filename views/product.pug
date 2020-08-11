@@ -1,8 +1,9 @@
 extends layout
 block content
     header.card-header
-        h4.card-title product Details.
-    form(method = "POST" action = '/product')
+        script(src='val.js')
+        h4.card-title Product Details.
+    form(method = "POST" action = '/product'  name = 'product' onsubmit = 'return validate();')
         div.form-row
             div.col.form-group
                 label Name of the Item:
@@ -37,9 +38,9 @@ block content
             div.col.form-group
                 label Number in stock:
                 input.form-control(name = "stock_number")
-            div.col.form-group
-                label Description:
-                input.form-control(name = "description")
+            //- div.col.form-group
+            //-     label Description:
+            //-     input.form-control(name = "description")
             div.col.form-group
                 label color:
                 select.form-control(name="color")
@@ -48,4 +49,4 @@ block content
                     option(value="Grey") Grey
         div.form-row
             div.col.form-group
-            button.btn.btn-primary send 
+            button.btn.btn-primary(type="submit" name="submit") Send

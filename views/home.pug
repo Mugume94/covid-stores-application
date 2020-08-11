@@ -1,0 +1,52 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title covidstores
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css' integrity='sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX' crossorigin='anonymous')
+nav.navbar.navbar-expand-lg.navbar.navbar-dark.bg-dark
+  .container
+    a.navbar-brand(href='homepage.html') Covidstores
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='homepage.html')
+            | Home 
+            span.sr-only (current)
+        li.nav-item.active
+          a.nav-link(href='sign-in.html') Log in
+        li.nav-item.active
+          a.nav-link.disabled(href='#') Disabled
+      form.form-inline.my-2.my-lg-0
+        input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+        button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+.container
+  .row
+    .col-md-10
+      h3 come and shope with us at Davly supermarket
+      .card-deck
+        .card
+          img.card-img-top(src='images/image1.webp' alt='...')
+          .card-body
+            h5.card-title Sofa set.
+            p.card-text
+              | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          
+        .card
+          img.card-img-top(src='images/image2.webp' alt='...')
+          .card-body
+            h5.card-title Dining table
+            p.card-text The dining tables are availbale aand affordable. come and get one.
+          
+        .card
+          img.card-img-top(src='images/image3.webp' alt='...')
+          .card-body
+            h5.card-title Sofa set.
+            p.card-text
+              | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+          
+script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js' integrity='sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J' crossorigin='anonymous')

@@ -11,7 +11,7 @@ router.post('/', async(req, res)=>{
     const admin = new Admin(req.body);
     try{
       await admin.save()
-      res.send('Thanks you for your registartion!');
+      res.send('Thank for shopping with us!');
     }catch (err){
       res.send('sorry! something went wrong');
       console.log(err)
