@@ -10,6 +10,8 @@ const expressSession = require('express-session')({
 // requiring passport
 const passport = require('passport');
 
+
+// importing routes
 const loginRoutes = require('./routes/loginroutes')
 const registrationRoutes = require('./routes/registrationroutes')
 const adminRoutes = require('./routes/adminroutes')

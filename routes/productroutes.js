@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     res.render('product')
 })
 
-// posting the products in the data base
+// posting the details in the data base
 router.post('/', async(req, res)=>{
     //console.log(req.body)
     const product = new Product(req.body);
